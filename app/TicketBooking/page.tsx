@@ -19,30 +19,30 @@ const page = () => {
   };
 
   return (
-    <div className='w-screen min-h-screen h-full flex justify-center items-center my-10'>
-      <div className='w-full flex flex-col gap-3 items-center'>
-        <div className='flex flex-col items-center w-1/6'>
-          <p>Vip</p>
+    <div className='w-screen min-h-screen h-full flex justify-center items-center gap-4 '>
+      <div className='w-fit h-full flex flex-row gap-6 items-center'>
+        <div className='w-52 h-96 mt-12 bg-blue-600 text-white items-center justify-center flex rounded-e-lg'>
+          Screen
+        </div>
+        <div className='flex flex-col items-center  w-fit'>
           <GridLayout
             section={'VIP'}
-            totalSeats={25}
-            rowSize={5}
+            totalSeats={12}
+            rowSize={4}
             handleSeatSelection={handleSeatSelection}
             selectedSeat={selectedSeat}
           />
         </div>
-        <div className='flex flex-col items-center w-1/2'>
-          <p>Midddle</p>
+        <div className='flex flex-col items-center w-fit'>
           <GridLayout
             section={'MID'}
-            totalSeats={36}
+            totalSeats={30}
             rowSize={6}
             handleSeatSelection={handleSeatSelection}
             selectedSeat={selectedSeat}
           />
         </div>
-        <div className='flex flex-col items-center w-1/2'>
-          <p>General</p>
+        <div className='flex flex-col items-center w-fit'>
           <GridLayout
             section={'GEN'}
             totalSeats={64}

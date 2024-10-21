@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.no-scrollbar {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
+  /* For Chrome, Safari, and other WebKit-based browsers */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+textarea {
+  caret-color: transparent;
+}
+
+textarea:focus {
+  caret-color: black;
+}
