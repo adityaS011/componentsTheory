@@ -27,6 +27,18 @@ const Page = () => {
           >
             Ticket Booking
           </button>
+          <button
+            onClick={() => navigateTo('/DynamicLists')}
+            className='px-6 py-3 bg-red-500 text-white rounded-full text-lg shadow-md hover:bg-red-600 transition-transform transform hover:scale-105'
+          >
+            Dynamic Lists
+          </button>
+          <button
+            onClick={() => navigateTo('/New')}
+            className='px-6 py-3 bg-red-500 text-white rounded-full text-lg shadow-md hover:bg-red-600 transition-transform transform hover:scale-105'
+          >
+            New
+          </button>
         </div>
       </div>
     </div>
