@@ -34,10 +34,16 @@ const Page = () => {
             Dynamic Lists
           </button>
           <button
-            onClick={() => navigateTo('/New')}
+            onClick={() => navigateTo('/Api')}
             className='px-6 py-3 bg-red-500 text-white rounded-full text-lg shadow-md hover:bg-red-600 transition-transform transform hover:scale-105'
           >
-            New
+            Api Call
+          </button>
+          <button
+            onClick={() => navigateTo('/new')}
+            className='px-6 py-3 bg-red-500 text-white rounded-full text-lg shadow-md hover:bg-red-600 transition-transform transform hover:scale-105'
+          >
+            new
           </button>
         </div>
       </div>
