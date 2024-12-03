@@ -24,10 +24,8 @@ const CommentInput: React.FC = () => {
     };
 
     if (parentId === null) {
-      // Top-level comment
-      setComments((prev) => [...prev, newComment]);
+      setComments((prev) => [newComment, ...prev]);
     } else {
-      // Add reply to the correct comment
       setComments((prev) => addReplyToComment(prev, parentId, newComment));
     }
     setComment('');
@@ -40,7 +38,7 @@ const CommentInput: React.FC = () => {
   ): Comments[] => {
     return comments.map((comment) => {
       if (comment.id === parentId) {
-        return { ...comment, reply: [...comment.reply, reply] };
+        return { ...comment, reply: [reply, ...comment.reply] };
       }
       return {
         ...comment,
